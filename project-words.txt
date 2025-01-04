@@ -1000,6 +1000,7 @@ isaacs
 isarray
 isequal
 isexe
+isgroup
 isobject
 isows
 isplainobject
