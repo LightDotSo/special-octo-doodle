@@ -50,7 +50,7 @@ export const preloader = (
     offset: paginationState.pageIndex * paginationState.pageSize,
     limit: paginationState.pageSize,
     is_testnet: false,
-    group: true,
+    group: false,
     chain_ids: null,
   });
   preloadGetTokensCount({

@@ -76,7 +76,7 @@ export default async function Page({ params, searchParams }: PageProps) {
       limit: paginationState.pageSize,
       offset: paginationState.pageIndex * paginationState.pageSize,
       is_testnet: walletSettings?.is_enabled_testnet,
-      group: true,
+      group: false,
       chain_ids: null,
     }).queryKey,
     tokens,

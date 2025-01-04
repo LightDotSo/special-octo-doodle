@@ -45,7 +45,7 @@ type Story = StoryObj<typeof TokenModal>;
 
 const tokenModalProps: TokenModalProps = {
   address: "0xFbd80Fe5cE1ECe895845Fd131bd621e2B6A1345F" as Address,
-  isGroup: true,
+  isgroup: false,
   isTestnet: true,
   // biome-ignore lint/suspicious/noEmptyBlockStatements: <explanation>
   onClose: () => {},

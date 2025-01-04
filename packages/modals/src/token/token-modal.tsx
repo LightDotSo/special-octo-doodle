@@ -97,7 +97,7 @@ export const TokenModal: FC = () => {
       is_testnet: isTestnet ?? false,
       limit: Number.MAX_SAFE_INTEGER,
       offset: 0,
-      group: true,
+      group: false,
       chain_ids: null,
     });
 
