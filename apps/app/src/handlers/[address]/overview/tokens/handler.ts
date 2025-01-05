@@ -61,7 +61,7 @@ export const handler = async (
     offset: paginationState.pageIndex * paginationState.pageSize,
     limit: paginationState.pageSize,
     is_testnet: walletSettings.is_enabled_testnet,
-    group: true,
+    group: false,
     chain_ids: null,
   });
 

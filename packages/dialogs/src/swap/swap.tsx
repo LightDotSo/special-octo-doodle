@@ -425,7 +425,7 @@ export const SwapDialog: FC<SwapDialogProps> = ({ className }) => {
               setTokenModalProps({
                 address: wallet as Address,
                 type: "swap",
-                isGroup: true,
+                isGroup: false,
                 isTestnet: walletSettings?.is_enabled_testnet ?? false,
                 onClose: () => {
                   hideTokenModal();
@@ -594,7 +594,7 @@ export const SwapDialog: FC<SwapDialogProps> = ({ className }) => {
               setTokenModalProps({
                 address: wallet as Address,
                 type: "swap",
-                isGroup: true,
+                isGroup: false,
                 isTestnet: walletSettings?.is_enabled_testnet ?? false,
                 onClose: () => {
                   hideTokenModal();

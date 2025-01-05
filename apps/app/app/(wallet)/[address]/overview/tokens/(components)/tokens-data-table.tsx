@@ -67,7 +67,7 @@ export const TokensDataTable: FC<TokensDataTableProps> = ({ address }) => {
     is_testnet: walletSettings?.is_enabled_testnet ?? false,
     limit: paginationState.pageSize,
     offset: offsetCount,
-    group: true,
+    group: false,
     // biome-ignore lint/style/useNamingConvention: <explanation>
     chain_ids: null,
   });

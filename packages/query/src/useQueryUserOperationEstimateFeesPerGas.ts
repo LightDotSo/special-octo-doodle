@@ -24,6 +24,7 @@ import { type Hex, fromHex } from "viem";
 import {
   avalanche,
   avalancheFuji,
+  bsc,
   celo,
   celoAlfajores,
   polygon,
@@ -258,6 +259,21 @@ export const useQueryUserOperationEstimateFeesPerGas = ({
             : celoBaseMaxPriorityFeePerGas,
         ];
       }
+    }
+
+    // For BSC, there's a base max fee per gas
+    if (chainId === bsc.id) {
+      const bscBaseMaxPriorityFeePerGas = BigInt(1500000000);
+
+      return [
+        baseMaxFeePerGas && baseMaxFeePerGas > bscBaseMaxPriorityFeePerGas
+          ? baseMaxFeePerGas
+          : bscBaseMaxPriorityFeePerGas,
+        baseMaxPriorityFeePerGas &&
+        baseMaxPriorityFeePerGas > bscBaseMaxPriorityFeePerGas
+          ? baseMaxPriorityFeePerGas
+          : bscBaseMaxPriorityFeePerGas,
+      ];
     }
 
     // For polygon, there's a base max fee per gas

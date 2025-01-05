@@ -49,7 +49,7 @@ export const handler = async (params: { address: string }) => {
     offset: 0,
     limit: OVERVIEW_ROW_COUNT,
     is_testnet: walletSettings.is_enabled_testnet,
-    group: true,
+    group: false,
     chain_ids: null,
   });
 

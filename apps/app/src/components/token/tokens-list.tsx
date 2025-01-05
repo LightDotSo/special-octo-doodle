@@ -61,7 +61,7 @@ export const TokensList: FC<TokensListProps> = ({ address, limit }) => {
     offset: 0,
     // biome-ignore lint/style/useNamingConvention: <explanation>
     is_testnet: walletSettings?.is_enabled_testnet ?? false,
-    group: true,
+    group: false,
     // biome-ignore lint/style/useNamingConvention: <explanation>
     chain_ids: null,
   });
